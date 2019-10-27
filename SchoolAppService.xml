@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SchoolAppService</name>
+    </assembly>
+    <members>
+        <member name="M:SchoolAppService.Controllers.SchoolController.GetAllClass">
+            <summary>
+            Sınıf listesini getirir.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SchoolAppService.Controllers.SchoolController.GetAllStudents">
+            <summary>
+            Öğrenci listesini getirir.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SchoolAppService.Controllers.SchoolController.AddStudent(SchoolAppService.Model.Student)">
+             <summary>
+             Öğrenci ekler.
+             </summary>
+             <remarks>
+             Örnek istek:
+            
+                 GET /AddStudent
+                 {
+                    "name": "Hakan",
+                    "no": 423,
+                    "gender": "Bay",
+                    "age": 27,
+                    "classID": 1
+                 }
+            
+             </remarks>
+             <response code="201">Yeni bir öprenci eklendi.</response>
+             <response code="400">Eklenemedi</response>            
+             <returns>Yeni bir öğrenci ekler..</returns>
+        </member>
+    </members>
+</doc>
