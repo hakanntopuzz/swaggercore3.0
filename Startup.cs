@@ -92,7 +92,7 @@ namespace SchoolAppService
             }
             else
             {
-               s app.UseHsts();
+              app.UseHsts();
             }
 
             app.UseStaticFiles();
